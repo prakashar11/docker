@@ -4,6 +4,9 @@
 
 1. .env file to be populated with necessary token
 2. Network to be incuded in docker compose file that starts platform/workers
+```
+docker network ls
+```
 3. Update relevant connector docker compose files with necessary details e.g., ADMIN_TOKEN to be used by the connectors to connect to platform/workers and also data source URL to be configured
 4. To start relevant connector separately
 ```
