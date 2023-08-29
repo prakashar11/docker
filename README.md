@@ -13,7 +13,7 @@ docker network ls
 docker-compose -f mitre-docker-compose.yml up -d
 docker-compose -f cisa-docker-compose.yml up -d
 ```
-5. To restart only a specific container that needs to be recreated/restarted
+5. For a specific container that needs to be recreated/restarted
 ```
 docker-compose restart <container name in docker compose.yml>
 ```
