@@ -4,7 +4,6 @@ services:
     #image: opencti/connector-alienvault:4.3.1
     image: opencti/connector-alienvault:latest
     environment:
-      #- OPENCTI_URL=${OPENCTI_BASE_URL}
       - OPENCTI_URL=http://opencti:8080
       - OPENCTI_TOKEN=${OPENCTI_ADMIN_TOKEN}
       - CONNECTOR_ID=fd4cc1fd-6f2c-412e-8928-0ae942311450
