@@ -2,7 +2,7 @@
 
 ## Setting up considerations
 
-1. .env file to be populated with necessary token
+1. .env file to be populated with necessary tokens
 2. Network to be incuded in docker compose file that starts platform/workers
 ```
 docker network ls
