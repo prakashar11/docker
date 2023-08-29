@@ -1,5 +1,20 @@
 # OpenCTI Docker deployment
 
+## Setting up considerations
+
+1. .env file to be populated with necessary token
+2. Network to be incuded in docker compose file that starts platform/workers
+3. Update relevant connector docker compose files with necessary details e.g., ADMIN_TOKEN to be used by the connectors to connect to platform/workers and also data source URL to be configured
+4. To start relevant connector separately
+```
+docker-compose -f mitre-docker-compose.yml up -d
+docker-compose -f cisa-docker-compose.yml up -d
+```
+5. To restart only a specific container that needs to be recreated/restarted
+```
+docker-compose restart <container name in docker compose.yml>
+```
+
 ## Documentation
 
 You can find the detailed documentation about the Docker installation in the [OpenCTI documentation space](https://docs.opencti.io/latest/deployment/installation/#using-docker).

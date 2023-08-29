@@ -173,6 +173,10 @@ services:
     restart: always
     depends_on:
       - opencti
+networks:
+  default:
+    external: true
+    name: docker-opencti_default
 
 volumes:
   esdata:
